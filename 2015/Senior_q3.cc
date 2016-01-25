@@ -19,11 +19,11 @@ int main() {
 		cin >> y; //input desired gate
 		y--; //adjust to array position
 		
-		while (tru == false) {
+		while (true) {
 			if (arr[y] == false) { //no plane there yet
 				arr[y] = true; //place plane there
-				tru = true; //plane placed, end loop
 				num ++; //one more plane placed
+				break;
 			}
 			
 			else {
