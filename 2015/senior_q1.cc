@@ -1,3 +1,5 @@
+// 2015//s1
+
 #include <iostream>
 #include <vector>
 
@@ -29,7 +31,7 @@ int main() {
 		vec.pop_back();
 	}
 
-	cout << sum;
+	cout << sum << endl;
 
 	// your code goes here
 	return 0;
