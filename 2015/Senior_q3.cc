@@ -15,13 +15,12 @@ int main() {
 
 	for (int x = 0; x < p; x++) {
 		int y; //input gate #
-		bool tru = false; //as long as plane hasn't been placed continue
 		cin >> y; //input desired gate
 		y--; //adjust to array position
 		
 		while (true) {
 			if (arr[y] == false) { //no plane there yet
-				arr[y] = true; //place plane there
+				arr[y] = true; //place plane there 
 				num ++; //one more plane placed
 				break;
 			}
