@@ -14,10 +14,16 @@ int main() {
 	vector <int> friends;
 	int rounds[m]; //array
 	
+	for (int y = 0; y < m;y++) {
+	// for number of m values input m values
+	}
+	
 	for (int x = 0; x < k;x++) {
 		int y=x+1;
 		friends.push_back (y);
 	}
+	
+	for ()
 	
 	for (int y = 0; y < a; y++) {
 		int delete = rounds[y] - 1; //starts with the number at point r, adjust to position
