@@ -1,0 +1,50 @@
+
+
+//took aprox 25 minutes basic coding another 10 or so to figure out I needed a double equals in the good statement
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n;
+	
+	cin >> n;
+	
+	string set1[n], set2[n];
+	
+	for (int x = 0; x < n; x++){ //input first set of names
+		cin >> set1[x];
+	}
+	
+	for (int y = 0; y < n; y++){ //input 2nd set of names
+		cin >> set2[y];
+	}
+	
+	for (int a = 0;a < n;a++) { //a assigned to place of first set
+		int find = 0;
+		
+		if (set1[a] == set2[a]) { //if person partnered with self bad & end
+			cout << "bad" << endl;
+			return 0;
+		}
+		
+		while (find < n)  {
+			if (set1[a] == set2[find]) {
+				if (set1[find] != set2[a]) { //if partners don't work bad & end
+					cout << "bad" << endl;
+					return 0;
+				}
+				else {
+					break;
+				}
+			}
+			else {
+				find ++;
+			}
+		}
+		if (a == n) { //if it has gone through all values and still good
+			cout << "good" << endl;
+		}
+	}
+	
+	return 0;
+}
